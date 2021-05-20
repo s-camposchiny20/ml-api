@@ -1,0 +1,96 @@
+ERROR:root:Something went wrong!
+INFO:uvicorn.error:Started server process [5928]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [5928]
+INFO:uvicorn.error:Started server process [9800]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [9800]
+INFO:uvicorn.error:Started server process [18140]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [18140]
+INFO:uvicorn.error:Started server process [20368]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [20368]
+INFO:uvicorn.error:Started server process [20412]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [20412]
+INFO:uvicorn.error:Started server process [23764]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [23764]
+INFO:uvicorn.error:Started server process [2728]
+INFO:uvicorn.error:Waiting for application startup.
+INFO:uvicorn.error:Application startup complete.
+INFO:uvicorn.error:Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+ERROR:uvicorn.error:Exception in ASGI application
+Traceback (most recent call last):
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\uvicorn\protocols\http\h11_impl.py", line 396, in run_asgi
+    result = await app(self.scope, self.receive, self.send)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 45, in __call__
+    return await self.app(scope, receive, send)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\fastapi\applications.py", line 199, in __call__
+    await super().__call__(scope, receive, send)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\starlette\applications.py", line 112, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\starlette\middleware\errors.py", line 181, in __call__
+    raise exc from None
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\starlette\middleware\errors.py", line 159, in __call__
+    await self.app(scope, receive, _send)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\starlette\exceptions.py", line 82, in __call__
+    raise exc from None
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\starlette\exceptions.py", line 71, in __call__
+    await self.app(scope, receive, sender)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\starlette\routing.py", line 580, in __call__
+    await route.handle(scope, receive, send)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\starlette\routing.py", line 241, in handle
+    await self.app(scope, receive, send)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\starlette\routing.py", line 52, in app
+    response = await func(request)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\fastapi\routing.py", line 201, in app
+    raw_response = await run_endpoint_function(
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\fastapi\routing.py", line 150, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\starlette\concurrency.py", line 40, in run_in_threadpool
+    return await loop.run_in_executor(None, func, *args)
+  File "D:\Users\jocam\anaconda3\lib\concurrent\futures\thread.py", line 57, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File ".\main.py", line 37, in predict
+    encoded_features = list(enc.transform(np.array(to_predict[-2:]).reshape(1, -1))[0])
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\sklearn\preprocessing\_encoders.py", line 471, in transform
+    X_int, X_mask = self._transform(X, handle_unknown=self.handle_unknown,
+  File "d:\users\jocam\python_venvs\eabd\lib\site-packages\sklearn\preprocessing\_encoders.py", line 136, in _transform
+    raise ValueError(msg)
+ValueError: Found unknown categories ['string'] in column 0 during transform
+INFO:uvicorn.error:Shutting down
+INFO:uvicorn.error:Waiting for application shutdown.
+INFO:uvicorn.error:Application shutdown complete.
+INFO:uvicorn.error:Finished server process [2728]
